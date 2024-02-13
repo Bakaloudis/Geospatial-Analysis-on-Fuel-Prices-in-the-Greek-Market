@@ -1,1 +1,1 @@
-geopands
+geopands==0.14.1
