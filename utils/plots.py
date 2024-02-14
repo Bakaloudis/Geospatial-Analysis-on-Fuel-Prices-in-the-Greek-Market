@@ -205,6 +205,17 @@ def plot_prefectures_clustering(clustering_df,average_prices_df,gdf,selected_pre
             cluster_4+= float(average_fuel_price)
             flag_4+=1
 
+    if flag_0 == 0:
+        flag_0 = 0.5
+    if flag_1 == 0:
+        flag_1 = 0.5
+    if flag_2 == 0:
+        flag_2 = 0.5
+    if flag_3 == 0:
+        flag_3 = 0.5
+    if flag_4 == 0:
+        flag_4 = 0.5
+
     average_per_cluster = {
         0:cluster_0/flag_0,
         1:cluster_1/flag_1,
@@ -336,8 +347,17 @@ def print_per_complex_islands(gdf,islands_df,results,selected_complex):
             cluster_3+= float(price_as_float)
             flag_3+=1
 
-    print(flag_0,flag_1,flag_2,flag_3)
-    print(cluster_0,cluster_1,cluster_2,cluster_3)
+    #print(flag_0,flag_1,flag_2,flag_3)
+    #print(cluster_0,cluster_1,cluster_2,cluster_3)
+            
+    if flag_0 == 0:
+        flag_0 = 0.5
+    if flag_1 == 0:
+        flag_1 = 0.5
+    if flag_2 == 0:
+        flag_2 = 0.5
+    if flag_3 == 0:
+        flag_3 = 0.5       
 
     average_per_cluster = {
         "0":cluster_0/flag_0,
